@@ -1,0 +1,167 @@
+@font-face {
+  font-family: 'Timer';
+  src: url('/font/timer.ttf');
+}
+
+@font-face {
+  font-family: 'Basket';
+  src: url('/font/Basketball.otf');
+}
+
+body {
+  background-color: transparent;
+  background-image: url('/images/background.jpg');
+  background-size: auto;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Timer';
+  height: 100vh;
+  padding: 0px 30px;
+}
+
+header, footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  height: 30vh;
+}
+
+#title {
+  letter-spacing: 16px;
+  font-size: 7vw;
+  line-height: 1;
+  padding-top: 30px;
+  text-align: center;
+}
+
+h1 {
+  font-family: Basket, Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 0;
+  letter-spacing: 4px;
+  padding: 20px 0;
+}
+
+#ball {
+  width: 90px;
+  height: 90px;
+}
+
+#score-away, #score-home {
+  font-size: 90px;
+  padding: 0;
+  margin: 10px 0 0 0;
+  color: #7C3AED;
+}
+
+.home-score, .away-score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: 155px;
+}
+
+.scoreboard {
+  border: 2px solid black;
+  border-radius: 5px;
+  width: 90%;
+  max-width: 575px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 30px 0;
+  background-color: #080808;
+  box-shadow: 0 0 60px 2px #000;
+}
+
+.teams-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: -25px;
+  
+}
+
+.score-container {
+  width: 100%;
+  height: 120px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #201139;
+  margin: 0;
+  padding: 0;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  height: 45px;
+  width: 155px;
+  margin: 30px 0;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #7C3AED80;
+  border-radius: 5px;
+  background-color: transparent;
+  font-family: 'Timer';
+  width: 45px;
+  height: 45px;
+  font-size: 18px;
+  color: #7C3AED;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #201139;
+  color: white;
+}
+
+.reset-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+#reset {
+  height: 45px;
+  padding: 8px 16px;
+  background-color: transparent;
+  border: 2px solid #7C3AED90;
+  border-radius: 5px;
+  color: #7C3AED;
+  font-family: 'Timer';
+  cursor: pointer;
+}
+
+#reset:hover {
+  background-color: #201139;
+  color: white;
+}
+
+#footer {
+  font-size: 42px;
+  padding-top: 35px;
+}
+
+#leaf {
+  width: 60px;
+  height: 60px;
+}
+
+
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <header>
+      <img src="/images/ball.png" id="ball" alt="Toronto Raptors logo of a basketball with claw marks through it.">
+      <h1 id="title">TORONTO RAPTORS</h1>
+    </header>
+
+    <div class="scoreboard">
+      
+        <div class="teams-wrapper">
+          
+          <div class="home-score">
+          <h1>HOME</h1>
+            <div class="score-container" > 
+              <span id="score-home">0</span>
+            </div>
+            <div class="button-wrapper">
+              <button class="button" onclick="addHome1()">+1</button>
+              <button class="button" onclick="addHome2()">+2</button>
+              <button class="button" onclick="addHome3()">+3</button>
+            </div>
+          </div>
+        
+          <div class="away-score">
+            <h1>AWAY</h1>
+            <div class="score-container"> 
+              <span id="score-away">0</span>
+            </div>
+            <div class="button-wrapper">
+              <button class="button" onclick="addAway(1)">+1</button>
+              <button class="button" onclick="addAway(2)">+2</button>
+              <button class="button" onclick="addAway(3)">+3</button>
+            </div>
+          </div>
+        </div>
+      
+      
+        <div class="reset-wrapper">
+          <button id="reset" onclick="reset()">Reset Score</button>
+        </div>
+
+    </div>
+
+    <footer>
+      <h1 id="footer">WE THE NORTH</h1>
+      <img src="/images/leaf.png" id="leaf" alt="Logo of a maple leaf">
+      
+    </footer>
+
+    <script src="index.js"></script>
+    
+  </body>
+</html>
