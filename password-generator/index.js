@@ -5,25 +5,33 @@ const passwordLength = 15;
 
 let password1 = document.querySelector("#password1");
 let password2 = document.querySelector("#password2");
+let passwordsContainerEl = document.querySelector("#passwords-container")
+
+function generatePassword() {
+
+    passwordsContainerEl.style.display = "flex";
+
+    let p1 = "";
+    let p2 = "";
+
+    for (i = 0; i < passwordLength; i++) {
+        let index1 = Math.floor(Math.random() * characters.length);
+        let index2 = Math.floor(Math.random() * characters.length);
+
+        p1 += characters[index1]
+        p2 += characters[index2]
+    }
+
+    password1.textContent = p1
+    password2.textContent = p2
+}
+
+console.log(password1.textContent)
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// First attempt no help:
+// First attempt with no help:
 
 // let password1 = document.querySelector('#password1');
 // let password2 = document.querySelector('#password2');

@@ -8,9 +8,10 @@
 body {
     background-color: var(--background-color);
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
     padding: 30px;
+    margin-top: 15vh;
     font-family: "Inter", sans-serif;
 }
 
@@ -27,13 +28,13 @@ h1 {
 }
 
 #hero {
-    height: 80vh;
+    height: auto;
     width: 100%;
     max-width: 1400px;
     display: flex;
     flex-direction: column;
     align-items: start;
-    justify-content: center;
+    justify-content: start;
     font-family: "Karla", sans-serif;
 }
 
